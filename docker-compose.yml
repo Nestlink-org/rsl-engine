@@ -1,0 +1,31 @@
+services:
+  # ===========================
+  # POSTGRESQL (DETECTION METADATA & AUDIT LOGS)
+  # ===========================
+  db:
+    image: postgres:15
+    container_name: rsl-db
+    restart: always
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "${POSTGRES_USER}"]
+      interval: 5s
+      retries: 5
+      start_period: 10s
+    networks:
+      - rsl-network
+
+volumes:
+  postgres_data:
+
+networks:
+  aegis-x-network:
+    driver: bridge
+    name: rsl-network

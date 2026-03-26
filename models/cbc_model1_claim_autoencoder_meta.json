@@ -1,0 +1,31 @@
+{
+  "model_name": "Model 1: Per\u2011Claim Autoencoder",
+  "model_type": "deep_autoencoder",
+  "input_dim": 12,
+  "latent_dim": 32,
+  "feature_names": [
+    "age",
+    "sex_encoded",
+    "HGB",
+    "HCT",
+    "MCV",
+    "MCHC",
+    "NEU",
+    "LYM",
+    "EOS",
+    "BAS",
+    "MON",
+    "PLT"
+  ],
+  "threshold": 5.004205464072272e-05,
+  "threshold_percentile": 95,
+  "train_size": 2800000,
+  "val_size": 600000,
+  "test_size": 600000,
+  "best_val_loss": 1.0407140507595614e-05,
+  "test_anomaly_rate": 0.04985833333333333,
+  "training_date": "2026-03-14T16:34:39.892949",
+  "epochs_trained": 40,
+  "batch_size": 2048,
+  "learning_rate": 0.001
+}

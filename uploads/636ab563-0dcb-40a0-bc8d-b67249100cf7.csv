@@ -1,0 +1,3 @@
+claim_id,patient_id,facility_id,admission_date,discharge_date,claimed_diagnosis,age,sex,HGB,HCT,MCV,MCHC,NEU,LYM,EOS,BAS,MON,PLT,length_of_stay
+CLM001,PAT001,FAC001,2024-01-10,2024-01-12,ASTHMA,35,Male,13.5,40.5,88.0,33.5,65.0,25.0,3.0,0.5,5.0,250.0,2.0
+CLM002,PAT002,FAC001,2024-01-11,2024-01-15,PNEUMONIA,52,Female,11.2,34.0,82.0,32.0,72.0,20.0,2.0,0.3,4.5,180.0,4.0

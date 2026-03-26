@@ -1,0 +1,55 @@
+{
+  "model_name": "Model 2: Hierarchical Disease Classifier",
+  "model_type": "multi_task_neural_network",
+  "input_dim": 10,
+  "feature_names": [
+    "HGB",
+    "HCT",
+    "MCV",
+    "MCHC",
+    "NEU",
+    "LYM",
+    "EOS",
+    "BAS",
+    "MON",
+    "PLT"
+  ],
+  "num_categories": 3,
+  "category_names": [
+    "obstetric",
+    "respiratory",
+    "trauma"
+  ],
+  "num_diagnoses": 5,
+  "diagnosis_names": [
+    "APH PPH",
+    "ASTHMA",
+    "PNEUMONIA",
+    "PUERPERAL SEPSIS",
+    "TBI"
+  ],
+  "diagnosis_to_category": {
+    "APH PPH": "obstetric",
+    "ASTHMA": "respiratory",
+    "PNEUMONIA": "respiratory",
+    "PUERPERAL SEPSIS": "obstetric",
+    "TBI": "trauma"
+  },
+  "loss_weights": {
+    "category_output": 0.3,
+    "diagnosis_output": 0.7
+  },
+  "train_size": 2800000,
+  "val_size": 600000,
+  "test_size": 600000,
+  "best_val_category_accuracy": 0.712785005569458,
+  "best_val_diagnosis_accuracy": 0.6263066530227661,
+  "best_val_category_auc": 0.8978162407875061,
+  "test_category_accuracy": 0.7132616666666667,
+  "test_diagnosis_accuracy": 0.625715,
+  "test_exact_match_rate": 0.5885083333333333,
+  "training_date": "2026-03-18T14:34:45.810414",
+  "epochs_trained": 69,
+  "batch_size": 1024,
+  "learning_rate": 0.001
+}

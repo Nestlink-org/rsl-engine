@@ -1,0 +1,39 @@
+[project]
+name = "rsl-engine"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "aiofiles>=25.1.0",
+    "aiokafka>=0.12.0",
+    "alembic>=1.16.0",
+    "asyncpg>=0.31.0",
+    "fastapi[standard]>=0.135.1",
+    "hypothesis>=6.135.0",
+    "langchain>=1.2.12",
+    "langchain-community>=0.4.1",
+    "langchain-openai>=1.1.11",
+    "langgraph>=1.1.2",
+    "matplotlib>=3.10.8",
+    "numpy>=2.4.3",
+    "opencv-python>=4.13.0.92",
+    "paddleocr==2.9.1",
+    "paddlepaddle==2.6.2",
+    "pandas>=3.0.1",
+    "pdf2image>=1.17.0",
+    "pillow>=12.1.1",
+    "psycopg2-binary>=2.9.10",
+    "pydantic>=2.12.5",
+    "pydantic-settings>=2.13.1",
+    "pymupdf>=1.27.2",
+    "python-dotenv>=1.2.2",
+    "python-jose>=3.5.0",
+    "python-multipart>=0.0.22",
+    "redis>=6.2.0",
+    "reportlab>=4.4.1",
+    "seaborn>=0.13.2",
+    "sqlmodel>=0.0.37",
+    "tensorflow>=2.21.0",
+    "web3>=7.14.1",
+]

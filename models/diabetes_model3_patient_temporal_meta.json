@@ -1,0 +1,30 @@
+{
+  "model_name": "Model 3: Diabetes Patient Temporal LSTM Autoencoder",
+  "model_type": "lstm_autoencoder",
+  "test_type": "HbA1c",
+  "sequence_length": 5,
+  "n_features": 6,
+  "feature_names": [
+    "age",
+    "sex_encoded",
+    "HBA1C",
+    "CREATININE",
+    "UREA",
+    "length_of_stay"
+  ],
+  "latent_dim": 48,
+  "threshold": 0.12035395804843524,
+  "threshold_percentile": 95,
+  "train_sequences": 641704,
+  "val_sequences": 137205,
+  "test_sequences": 137183,
+  "train_patients": 183337,
+  "val_patients": 39287,
+  "test_patients": 39287,
+  "best_val_loss": 0.0519200898706913,
+  "test_anomaly_rate": 0.05113607371175729,
+  "training_date": "2026-03-21T18:58:22.247822",
+  "epochs_trained": 22,
+  "batch_size": 512,
+  "learning_rate": 0.001
+}

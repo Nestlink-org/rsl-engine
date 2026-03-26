@@ -1,0 +1,2 @@
+[tool.watchfiles]
+ignore_paths = ["uploads", "static", "models", ".venv", "__pycache__", "alembic/versions"]

@@ -1,0 +1,38 @@
+{
+  "model_name": "Model 2: HbA1c Hierarchical Disease Classifier",
+  "model_type": "multi_task_neural_network",
+  "test_type": "HbA1c",
+  "input_dim": 3,
+  "feature_names": [
+    "HBA1C",
+    "CREATININE",
+    "UREA"
+  ],
+  "num_categories": 1,
+  "category_names": [
+    "diabetes"
+  ],
+  "num_diagnoses": 3,
+  "diagnosis_names": [
+    "Diabetes - (DKA/HHS)",
+    "Diabetic Infections",
+    "Diabetic Nephropathy"
+  ],
+  "diagnosis_to_category": {
+    "Diabetes - (DKA/HHS)": "diabetes",
+    "Diabetic Infections": "diabetes",
+    "Diabetic Nephropathy": "diabetes"
+  },
+  "loss_weights": {
+    "category_output": 0.2,
+    "diagnosis_output": 0.8
+  },
+  "train_size": 2100000,
+  "val_size": 450000,
+  "test_size": 450000,
+  "test_diagnosis_accuracy": 0.5145866666666666,
+  "training_date": "2026-03-21T16:37:49.342539",
+  "epochs_trained": 58,
+  "batch_size": 1024,
+  "learning_rate": 0.001
+}
